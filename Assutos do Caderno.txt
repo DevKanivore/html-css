@@ -1,0 +1,87 @@
+Dominío:
+globalcontabilidade.local
+//Dados do Ti//
+ 
+\\dom03
+\\dom04
+
+Usuário Fortes:
+2019      2020
+junior    admin
+senha:    senha:
+244807    0
+
+Alterdata
+Usuário:
+administrador
+senha:
+Gd2708am@@
+
+Anydesk: 101234410
+Gb0212$$
+
+suporte.am@gold 
+contabilidade.com
+senha:
+Gd0435@@
+*master Alterdata 
+supervisor - 123456
+
+\\dom03
+Usuário:
+administrador
+senha:
+Juh1391ne$$
+Usuário:
+Anydesk: 451562042
+senha:
+Nm2547@@
+\\dom04
+Usuário:
+ti 
+senha:
+Juh1391ne$$
+Anydesk: 822363085
+senha:
+Nm2547@@
+
+Base para Fortes 
+Fortes-01:Fortes 2019(2019)
+senha:
+Gd0435@@
+Fortes-01:Fortes 2020(2020)
+senha:
+Gd0435@@
+
+Localweb
+suporte.am@goldcontabildade.com
+senha:
+Gb2684@@
+Gold1606
+Gd1700al@@
+
+suporte.am@goldcontabildade.com
+senha:
+Nm2547@@
+
+rh@goldcontabildade.com
+senha:
+Rh3167@@
+
+bakuprh@goldcontabildade.com
+senha:
+Gd0435@@
+
+ contrato@goldcontabildade
+ senha:
+ contra9870@@
+ Gb4862$$
+
+ suporte.goldcontabildade@gnail.com
+ senha:
+ 5gb6587@@
+ Gb6587@@
+ contabil@goldcontabildade.com
+ senha:
+ Cont6182@@
+ Cont1684@@
