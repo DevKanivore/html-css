@@ -17,11 +17,98 @@
             background-position: top center;
             background-repeat: no-repeat;
             background-size: contain;
+            background-color: rgb(255, 255, 255);
         }
+
+        .container{
+            height: 31.25em;
+            width: 31.25em;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            color: rgb(122, 116, 116);
+        }
+
+        p.letter{
+            font-size: 3.25em;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        .letter-M{
+            left: 0.2em;
+        }
+
+        .letter-N{
+            right: 0.2em;
+        }
+
+        .moon{
+            background-color: rgb(238, 242, 245);
+            height: 8em;
+            width: 8em;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            box-shadow: 0 0 0 1.2em rgba(184, 178, 178, 0.027), 
+            0 0 0 1.2em rgba(224, 217, 217, 0.021), 
+            0 0 0 1.2em rgba(250, 248, 248, 0.185);
+        }
+
+        .moon::after{
+            position: absolute;
+            content: "";
+            background-color: #e6e6e6;
+            height: 0.9em;
+            width: 0.9em;
+            border-radius: 50%;
+            top: 3.75em;
+            left: 1.25em;
+            box-shadow: 0.9em -2.1em 0 0.2em #e6e6e6, 
+            1.5em -0.3em 0 -0.06EM #e6e6e6;
+        }
+
+        .orbit {
+            height: 18.75em;
+            width: 18.75em;
+            border-radius: 50%;
+            position: absolute;
+            left: -5.2em;
+            bottom: -5.2em;
+            animation: spin 8s infinite linear;
+        }
+
+        @keyframes spin {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .orbit p {
+            position: absolute;
+            font-size: 3.5em;
+            top: 0.25em;
+            left: 0.25em;
+        }
+
     </style>
 </head>
 <body>
     <header>
+        <div class="container"> 
+            <p class="letter letter-M">M</p>
+            <div class="moon">
+                <div class="orbit">
+                    <p>O</p>
+                </div>
+            </div>
+            <p class="letter letter-N">N</p>
+        </div>
         <nav>
             
         </nav>
