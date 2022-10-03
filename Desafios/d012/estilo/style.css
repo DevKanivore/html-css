@@ -99,6 +99,13 @@ footer {
     padding: 10px;
 }
 
-@media and (max-width: 767px){
-    
+@media (max-width: 670px){
+
+    section {
+        font-size: 5vw;
+    }
+
+    footer {
+        font-size: 10px;
+    }
 }
