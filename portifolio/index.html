@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Nogueira | Portfólio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <nav class="group">
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Tecnologias</a></li>
+                </ul>
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                        <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+                <div class="searchBox">
+                    <input type="text" placeholder="Search here . . . ">
+                </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('.header');
+
+        searchBtn.onclick = function(){
+            searchBox.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+          
+        }
+
+        closeBtn.onclick = function(){
+            searchBox.classList.remove('active');
+            closeBtn.classList.remove('active');
+            searchBtn.classList.remove('active');
+
+        }
+
+        menuToggle.onclick = function(){
+            header.classList.toggle('open');
+               
+        }
+
+    </script>
+</body>
+</html>
