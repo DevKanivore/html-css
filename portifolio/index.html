@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiago Nogueira | Portfólio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css2/style.css">
 </head>
 <body>
     <header>
@@ -43,24 +43,29 @@
         let searchBox = document.querySelector('.searchBox');
         let navigation = document.querySelector('.navigation');
         let menuToggle = document.querySelector('.menuToggle');
-        let header = document.querySelector('.header');
+        let nav = document.querySelector('nav');
 
         searchBtn.onclick = function(){
             searchBox.classList.add('active');
             closeBtn.classList.add('active');
             searchBtn.classList.add('active');
-          
+            menuToggle.classList.add('hide');
+    
         }
 
         closeBtn.onclick = function(){
             searchBox.classList.remove('active');
             closeBtn.classList.remove('active');
             searchBtn.classList.remove('active');
+            menuToggle.classList.remove('hide');
 
         }
 
         menuToggle.onclick = function(){
-            header.classList.toggle('open');
+            nav.classList.toggle('open');
+            searchBox.classList.remove('active');
+            closeBtn.classList.remove('active');
+            searchBtn.classList.remove('active');
                
         }
 

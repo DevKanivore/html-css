@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:wght@300;400 & display=swap');
+
+:root {
+    --cor01: #262626;
+    --cor02: #41F2B1;
+    --cor03: #43D9AE;
+    --cor04: #268C6F;
+    --cor05: #01402E;
+
+    --fonte: 'Nunito', Helvetica, sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: var(--fonte);
+    color: var(--cor03);
+}
+
+html, body {
+    background-color: var(--cor01);
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #01402E;
+}
+
+header {
+    width: 100%;
+    min-height: 250px;
+}
+
+header .top-header {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    background-color: #000;
+    border-bottom: 2px  solid var(--cor02);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+}
+
+header .top-header img {
+    
+
+}
+
+nav.group {
+    display: flex;
+    align-items: center;
+    margin: auto 550px;
+}
+
+div.top-header > a {
+    text-decoration: none;
+    font-size: 1.5em;
+    position: relative;
+    left: 150px;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom:  -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--cor03);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menuToggle {
+position: relative;
+display: none;
+}
+
+@media (max-width: 800px){
+
+    div.top-header > a {
+        text-decoration: none;
+        position: absolute;
+        left: 60px;
+        align-items: center;
+    }
+
+
+    .menuToggle{
+        position: absolute;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+        right: 50px;
+    }
+
+    nav .navigation {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+
+    nav.open .navigation{
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    nav.open .navigation li a {
+        font-size: 1.25em;
+    }
+
+    .hide{
+        display: none;
+    }
+    
+    .menuToggle .hide{
+        transition-delay: 1s;
+    }
+}
